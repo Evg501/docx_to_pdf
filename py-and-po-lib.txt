@@ -1,0 +1,2 @@
+https://www.ghostscript.com/releases/gsdnld.html
+pip install docx2pdf PyPDF2
