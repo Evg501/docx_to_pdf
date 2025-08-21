@@ -1,1 +1,0 @@
-start wt -w 0 py main.py

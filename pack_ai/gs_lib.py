@@ -1,7 +1,7 @@
 import subprocess
 import os
 
-def compress_pdf(input_pdf, output_pdf, pdf_quality="/ebook", verbose=False):
+def compress_pdf(input_pdf, output_pdf, pdf_quality="/ebook", verbose=False, gs_command='gs'):
     """
     Сжимает PDF-файл с помощью Ghostscript.
 
@@ -20,7 +20,7 @@ def compress_pdf(input_pdf, output_pdf, pdf_quality="/ebook", verbose=False):
 
     # Параметры сжатия
     args = [
-        "gswin64c.exe", # gs 
+        gs_command, # gs gswin64c.exe
         "-sDEVICE=pdfwrite",
         "-dCompatibilityLevel=1.4",
         f"-dPDFSETTINGS={pdf_quality}",
