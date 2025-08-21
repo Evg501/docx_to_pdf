@@ -1,7 +1,10 @@
 
-https://www.ghostscript.com/releases/gsdnld.html
-pip install docx2pdf PyPDF2
-
 -- linux
+pip install PyPDF2
+
 sudo apt install libreoffice -y
 sudo apt install ghostscript -y
+
+-- windows 
+pip install docx2pdf PyPDF2
+https://www.ghostscript.com/releases/gsdnld.html
